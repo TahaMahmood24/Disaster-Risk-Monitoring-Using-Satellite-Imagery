@@ -1,3 +1,4 @@
+<img src="images/combined_logo.png" alt="Header" style="width: 400px;"/>
 
 ***The course material is the property of NVIDIA Corporation and is protected under copyright law. Unauthorized reproduction, distribution, or use of the material without NVIDIA Corporation's explicit permission is strictly prohibited. For inquiries regarding licensing or usage permissions, please contact NVIDIA Corporation directly through their official channels.***
 
@@ -82,8 +83,6 @@ In this notebook, I have learned how to train a segmentation model with the [TAO
 It allows developers to fine-tune pretrained models with custom data efficiently, eliminating the need for extensive training and deep AI expertise. Moreover, it facilitates model optimization for inference performance.
 
 ![TAO workflow](https://developer.nvidia.com/sites/default/files/akamai/TAO/nvidia-transfer-learning-toolkit.svg)
-
-YouTube: [Watch on YouTube](https://youtu.be/vKKCSMfE05A)
 
 In practice, starting a learning task on a network with randomly initialized weights can be inefficient due to factors such as data scarcity or prolonged training times. Transfer learning mitigates this by transferring learned features from one application to another, which works well because early layers in neural networks share similar functionalities across tasks.
 
