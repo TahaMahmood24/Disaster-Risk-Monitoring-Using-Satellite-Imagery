@@ -1,5 +1,5 @@
 
-***The course material is the property of Nvidia***
+***The course material is the property of NVIDIA Corporation and is protected under copyright law. Unauthorized reproduction, distribution, or use of the material without NVIDIA Corporation's explicit permission is strictly prohibited. For inquiries regarding licensing or usage permissions, please contact NVIDIA Corporation directly through their official channels.***
 
 # Disaster Risk Monitoring Using Satellite Imagery
 I have learned how to build and deploy a flood detection segmentation model using data collected from Sentinel-1 satellites. In order to achieve this, I have used NVIDIA's DALI, TAO Toolkit, TensorRT, and Triton Inference Server.
@@ -17,18 +17,16 @@ I have learned how to build and deploy a flood detection segmentation model usin
 - [Efficient Model Training](#efficient-model-training)
 - [Deploying a Model for Inference](#deploying-a-model-for-inference)
 
-### Introduction
+## Introduction
 
 
 file: [00_introduction.ipynb](https://github.com/TahaMahmood24/Disaster-Risk-Monitoring-Using-Satellite-Imagery/blob/main/00_introduction.ipynb)
 
 > Natural disasters such as flood, wildfire, drought, and severe storms wreak havoc throughout the world, causing billions of dollars in damages, and uprooting communities, ecosystems, and economies. The ability to detect, quantify, and potentially forecast natural disasters can help us minimize their adverse impacts on the economy and human lives. While this lab focuses primarily on detecting flood events, it should be noted that similar applications can be created for other natural disasters. 
 
-### Disaster Risk Monitoring Systems and Data Pre-Processing
+## Disaster Risk Monitoring Systems and Data Pre-Processing
 
----
-
-## Introduction to Floods 
+### Introduction to Floods 
 
 A [Flood](https://en.wikipedia.org/wiki/Flood) is an overflow of water that submerges land that is usually dry. They can occur under several conditions:
 - Overflow of water from water bodies, in which the water overtops or breaks levees (natural or man-made), resulting in some of that water escaping its usual boundaries.
@@ -37,11 +35,11 @@ A [Flood](https://en.wikipedia.org/wiki/Flood) is an overflow of water that subm
 
 Unfortunately, flooding events are on the rise due to climate change and sea level rise. Due to the increase in frequency and intensity, the topic of flood has garnered international attention in the past few years. In fact, organizations such as the United Nations have maintained effective response and proactive risk assessment for floods in their [Sustainable Development Goals](https://en.wikipedia.org/wiki/Sustainable_Development_Goals).
 
-## Sentinel-1 Mission and Flood Monitoring 
+### Sentinel-1 Mission and Flood Monitoring 
 
 Earth observation satellites like [Copernicus Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) provide essential data for flood monitoring. Sentinel-1 utilizes C-band [Synthetic Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar) (SAR) data, which can operate day and night and penetrate through clouds, making it ideal for continuous monitoring. The Sentinel-1 mission's frequent revisit time and high-resolution imagery enable effective flood risk assessment over time.
 
-## Deep Learning Model Training Workflow
+### Deep Learning Model Training Workflow
 
 Building a deep learning model involves several steps: collecting high-quality datasets, data preparation, model training, and optimization for deployment. Deep learning models, particularly those trained with supervised learning, excel in automatic feature extraction and association, enhancing their predictive capabilities.
 
@@ -53,11 +51,11 @@ Developing deep learning solutions presents several challenges:
 - Fine-tuning models for optimal performance and inference readiness requires significant effort.
 - Real-time data processing is computationally intensive, necessitating robust software and hardware infrastructure.
 
-## Sentinel-1 Data Public Access
+### Sentinel-1 Data Public Access
 
 Sentinel-1 SAR data is accessible via [ESA's Copernicus Open Access Hub](https://scihub.copernicus.eu/) and other platforms like [NASA's EARTHDATASEARCH](https://search.earthdata.nasa.gov/) and [Vertex](https://search.asf.alaska.edu/#/). These datasets, organized into tiles, facilitate efficient storage and retrieval of geographic imagery.
 
-## Data Pre-processing With DALI
+### Data Pre-processing With DALI
 
 Deep learning models require extensive data preprocessing to ensure compatibility with neural networks. Traditionally handled by CPUs, preprocessing is increasingly transitioned to GPUs for enhanced throughput and performance. [NVIDIA's DALI](https://developer.nvidia.com/dali) addresses CPU bottlenecks by accelerating data loading and preprocessing tasks, supporting various image, video, and audio formats.
 
@@ -73,11 +71,11 @@ DALI offers:
 Data augmentation techniques, such as geometric transformations, color adjustments, and noise addition, expand training datasets and improve model robustness and accuracy. DALI integrates these augmentations seamlessly into training workflows, enhancing model performance and generalization.
 
 
-### Efficient Model Training
+## Efficient Model Training
 file: [02_efficient_model_training.ipynb](https://github.com/TahaMahmood24/Disaster-Risk-Monitoring-Using-Satellite-Imagery/blob/main/02_efficient_model_training.ipynb)
 
 
-## Introduction to Floods <a name="introduction-to-floods"></a>
+### Introduction to Floods <a name="introduction-to-floods"></a>
 
 In this notebook, I have learned how to train a segmentation model with the [TAO Toolkit](https://developer.nvidia.com/tao) using pre-trained ResNet-18 weights. Additionally, I have learned how to export the model for deployment.
 
@@ -133,7 +131,8 @@ For detailed resources on TensorRT:
 ---
 
 By leveraging TAO Toolkit and TensorRT, developers can efficiently build and deploy robust disaster risk monitoring systems with state-of-the-art AI capabilities. This approach significantly accelerates development cycles and optimizes models for real-world deployment scenarios.
-### Deploying a Model for Inference
+
+## Deploying a Model for Inference
 
 file: [03_model_deployment_for_inference.ipynb](https://github.com/TahaMahmood24/Disaster-Risk-Monitoring-Using-Satellite-Imagery/blob/main/03_model_deployment_for_inference.ipynb)
 
